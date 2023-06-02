@@ -1,0 +1,26 @@
+@layer components {
+  .button-basic-styles {
+    @apply text-white bg-primary-dark px-sm py-xs inline-block align-top;
+  }
+
+  /* Buttons */
+  .button-cta-xl {
+    @apply button-basic-styles;
+  }
+  .button-cta-l {
+    @apply button-basic-styles;
+  }
+  .button-cta-m {
+    @apply button-basic-styles;
+  }
+
+  .button-ghost-xl {
+    @apply button-basic-styles;
+  }
+  .button-ghost-l {
+    @apply button-basic-styles;
+  }
+  .button-ghost-m {
+    @apply button-basic-styles;
+  }
+}
