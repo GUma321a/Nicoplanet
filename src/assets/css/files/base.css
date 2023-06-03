@@ -1,5 +1,21 @@
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
-    @apply font-primary font-normal antialiased;
+    @apply font-primary font-normal leading-140 antialiased bg-secondary text-white text-16;
+  }
+
+  a {
+    @apply inline-block transition-colors;
+  }
+
+  main section:first-child {
+    @apply mt-xl;
+  }
+
+  .info__description-text + .info__description-text {
+    @apply mt-sm;
   }
 }

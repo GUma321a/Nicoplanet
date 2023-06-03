@@ -1,26 +1,28 @@
 @layer components {
-  .button-basic-styles {
-    @apply text-white bg-primary-dark px-sm py-xs inline-block align-top;
+  .heading-h1 {
+    @apply text-white font-bold text-24 leading-[90%] uppercase tracking-tight md:text-[50px] lg:text-[107px];
+  }
+  .heading-h2 {
+    @apply text-white font-bold text-20 leading-[90%] uppercase tracking-tight md:text-40 lg:text-[70px];
+  }
+  .heading-h3 {
+    @apply text-white font-bold text-18 leading-110 uppercase tracking-tight md:text-[38px] lg:text-[48px];
   }
 
-  /* Buttons */
-  .button-cta-xl {
-    @apply button-basic-styles;
-  }
-  .button-cta-l {
-    @apply button-basic-styles;
-  }
-  .button-cta-m {
-    @apply button-basic-styles;
+  .header__menu {
+    @apply font-medium text-[14px] leading-[120%];
   }
 
-  .button-ghost-xl {
-    @apply button-basic-styles;
-  }
   .button-ghost-l {
-    @apply button-basic-styles;
+    @apply border-white border-[1px] rounded-[50px] px-[23px] py-[32px] shadow-button;
   }
   .button-ghost-m {
-    @apply button-basic-styles;
+    @apply border-white border-[1px] rounded-[50px] px-[15px] py-[20px] shadow-button;
+  }
+  .button-cta-l {
+    @apply relative after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[15%] rounded-[50px] bg-buttonBg shadow-button py-[30px] pl-[30px] pr-[111px] text-14 font-bold uppercase leading-[90%] tracking-tightest md:text-20;
+  }
+  .button-cta-m {
+    @apply relative after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[15%] rounded-[50px] bg-buttonBg shadow-button py-[30px] pl-[30px] pr-[111px] text-14 font-bold uppercase leading-[90%] tracking-tightest md:text-20;
   }
 }

@@ -1,0 +1,18 @@
+/* Container */
+@screen lg {
+  .container {
+    @apply box-content px-md;
+  }
+}
+@screen xl {
+  .container {
+    @apply max-w-[1110px];
+  }
+}
+
+.container-padding {
+  @apply py-[50px] md:py-[100px] lg:py-[180px];
+}
+.container-margin {
+  @apply my-[50px] md:my-[100px] lg:my-[180px];
+}

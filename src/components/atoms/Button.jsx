@@ -15,12 +15,9 @@ function Button({
   ...props
 }) {
   const btnClass = () => {
-    if (variant === 'ghost' && size === 'xl') return 'button-ghost-m sm:button-ghost-xl';
-    if (variant === 'cta' && size === 'xl') return 'button-cta-m sm:button-cta-xl';
+    // if (variant === 'ghost' && size === 'xl') return 'button-ghost-m sm:button-ghost-xl';
     if (variant === 'ghost' && size === 'l') return 'button-ghost-m sm:button-ghost-l';
     if (variant === 'cta' && size === 'l') return 'button-cta-m sm:button-cta-l';
-    if (variant === 'ghost' && size === 'm') return 'button-ghost-m';
-    if (variant === 'cta' && size === 'm') return 'button-cta-m';
     return '';
   };
 

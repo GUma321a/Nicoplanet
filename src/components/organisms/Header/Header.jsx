@@ -1,23 +1,63 @@
 import React from 'react';
 
-import { Link } from '../../atoms';
+import { Button, Image, Link } from '../../atoms';
+
+import header_logo from '../../../assets/images/header-logo.svg';
 
 function Header() {
+  const menu = [
+    {
+      name: 'Home',
+      href: '#',
+    },
+    {
+      name: 'About',
+      href: '#',
+    },
+    {
+      name: 'Press',
+      href: '#',
+    },
+    {
+      name: 'Products',
+      href: '#',
+    },
+    {
+      name: 'Contact',
+      href: '#',
+    },
+    {
+      name: 'distribution',
+      href: '#',
+    },
+  ];
+
   return (
-    <div>
-      <ul className="flex gap-1">
-        <li>
-          <Link href="/" className="underline">
-            home
+    <header className="header">
+      <div className="container">
+        <div className="header__wrapper flex justify-between items-center border-b border-white border-opacity-20 pb-[20px]">
+          <Link href="codemagic.com.ua">
+            <Image src={header_logo} layout="intrinsic" />
           </Link>
-        </li>
-        <li>
-          <Link href="/about" className="underline">
-            about
-          </Link>
-        </li>
-      </ul>
-    </div>
+          <ul className="header__menu flex justify-between uppercase items-center">
+            {menu.map((item) => {
+              return (
+                <li className="header__menu-item mx-[10px]" key={item.href}>
+                  <Link href={item.href}>{item.name}</Link>
+                </li>
+              );
+            })}
+            <Button
+              link="codemagic.com.ua"
+              text="BECOME DISTRIBUTOR"
+              variant="ghost"
+              size="l"
+              className="ml-md"
+            />
+          </ul>
+        </div>
+      </div>
+    </header>
   );
 }
 
