@@ -6,7 +6,7 @@ import SectionInfo from '../organisms/SectionInfo';
 function Home() {
   return (
     <div className="reletive">
-      <Social />
+      <Social wrapperClass="absolute top-[50px] flex flex-col" className="mt-md" />
       <SectionHero />
       <SectionInfo />
     </div>

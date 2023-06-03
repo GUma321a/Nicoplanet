@@ -15,11 +15,11 @@ export default function SectionInfo() {
   ];
 
   return (
-    <section className="info container-margin">
+    <section className="info container-padding bg-infoBg bg-no-repeat bg-left bg-[length:200px_220px] md:bg-[length:500px_550px] lg:bg-[length:800px_850px]">
       <div className="container">
         <div className="info__wrapper flex justify-between">
-          <div className="info__number">
-            <Image width="245px" height="162px" layout="fixed" src={number} />
+          <div className="info__number block w-[245px]">
+            <Image src={number} />
           </div>
           <div className="info__description max-w-[570px]">
             <Title

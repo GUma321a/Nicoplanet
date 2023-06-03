@@ -1,12 +1,14 @@
 import React from 'react';
 
+import pt from 'prop-types';
+
 import twitter from '../../assets/images/icons/Twitter.svg';
 import youtube from '../../assets/images/icons/YouTube.svg';
 import instagram from '../../assets/images/icons/Instagram.svg';
 import facebook from '../../assets/images/icons/Facebook.svg';
 import { Image, Link } from '../atoms';
 
-export default function Social() {
+export default function Social({ wrapperClass, className }) {
   const icons = [
     {
       link: facebook,
@@ -31,10 +33,10 @@ export default function Social() {
   ];
 
   return (
-    <div className="social absolute top-[50px] flex flex-col">
+    <div className={`social ${wrapperClass}`}>
       {icons.map((item) => {
         return (
-          <Link href={item.src} key={item.link} className="my-sm">
+          <Link href={item.src} key={item.link} className={className}>
             <Image src={item.link} layout="intrinsic" />
           </Link>
         );
@@ -42,3 +44,8 @@ export default function Social() {
     </div>
   );
 }
+
+Social.propTypes = {
+  wrapperClass: pt.string,
+  className: pt.string,
+};

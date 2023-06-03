@@ -59,6 +59,10 @@ module.exports = {
       backgroundImage: {
         buttonBg: 'linear-gradient(180deg, #55FFE0 0%, #21AF85 100%)',
         buttonIcon: 'url("/icons/icon-right.svg")',
+        map: 'url("/icons/map.svg")',
+        mail: 'url("/icons/mail.svg")',
+        call: 'url("/icons/call.svg")',
+        infoBg: 'url("/decor/info-bg.png")',
       },
       boxShadow: {
         button: '4px 27px 51px rgba(82, 213, 134, 0.3)',

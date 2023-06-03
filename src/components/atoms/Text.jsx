@@ -3,9 +3,9 @@ import pt from 'prop-types';
 
 function Text({ text, className, children, size }) {
   const textSize = () => {
-    if (size === 's') return 'text-18';
+    if (size === 's') return 'text-14';
     if (size === 'm') return 'text-16';
-    if (size === 'l') return 'text-14';
+    if (size === 'l') return 'text-24';
     return '';
   };
 
