@@ -12,7 +12,7 @@ export default function Form({ className, textarea }) {
       />
       <input
         className="form-number p-md mb-md rounded-[50px] border-white border-opacity-50 border-[1px] bg-inherit"
-        type="number"
+        type="tel"
         placeholder="Phone"
       />
       {textarea && (
@@ -21,7 +21,7 @@ export default function Form({ className, textarea }) {
           name="message"
           cols="30"
           rows="10"
-          placeholder="message"
+          placeholder="Message"
         />
       )}
       <Button text="send" className="uppercase" type="cta" buttonType="submit" size="l" />

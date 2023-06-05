@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button, Image, Title } from '../../atoms';
+import { Button, Title } from '../../atoms';
 import Text from '../../atoms/Text';
 
 import number from '../../../assets/images/icons/1.svg';
+import Number from '../../atoms/Number';
 
 export default function SectionInfo() {
   const text = [
@@ -18,9 +19,7 @@ export default function SectionInfo() {
     <section className="info container-padding bg-infoBg bg-no-repeat bg-left bg-[length:200px_220px] md:bg-[length:500px_550px] lg:bg-[length:800px_850px]">
       <div className="container">
         <div className="info__wrapper flex justify-between">
-          <div className="info__number block w-[245px]">
-            <Image src={number} />
-          </div>
+          <Number w={245} content={number} />
           <div className="info__description max-w-[570px]">
             <Title
               size="h2"

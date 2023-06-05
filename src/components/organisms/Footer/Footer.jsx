@@ -9,6 +9,9 @@ import icon2 from '../../../assets/images/icons/mail.svg';
 import icon3 from '../../../assets/images/icons/tell.svg';
 import Form from '../../atoms/Form';
 import Copyright from '../../atoms/Copyright';
+import Number from '../../atoms/Number';
+
+import decor from '../../../assets/images/icons/3.svg';
 
 function Footer() {
   const contact = [
@@ -43,6 +46,7 @@ function Footer() {
             <Social className="mx-md" />
           </div>
           <div className="footer__form">
+            <Number content={decor} wrapperClass="mb-lg" w={276} />
             <Form textarea />
           </div>
         </div>

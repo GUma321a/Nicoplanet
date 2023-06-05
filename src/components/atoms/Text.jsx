@@ -6,6 +6,8 @@ function Text({ text, className, children, size }) {
     if (size === 's') return 'text-14';
     if (size === 'm') return 'text-16';
     if (size === 'l') return 'text-24';
+    if (size === 'product-title') return 'product-title';
+    if (size === 'product-subtitle') return 'product-subtitle';
     return '';
   };
 
@@ -16,7 +18,7 @@ Text.propTypes = {
   children: pt.node,
   text: pt.string,
   className: pt.string,
-  size: pt.oneOf(['s', 'm', 'l']),
+  size: pt.oneOf(['s', 'm', 'l', 'product-title', 'product-subtitle']),
 };
 
 Text.defaultProps = {

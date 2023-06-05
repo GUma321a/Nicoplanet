@@ -17,6 +17,7 @@ function Button({
   const btnClass = () => {
     // if (variant === 'ghost' && size === 'xl') return 'button-ghost-m sm:button-ghost-xl';
     if (variant === 'ghost' && size === 'l') return 'button-ghost-m sm:button-ghost-l';
+    if (variant === 'ghost-1' && size === 'l') return 'button-ghost-1-m sm:button-ghost-1-l';
     if (variant === 'cta' && size === 'l') return 'button-cta-m sm:button-cta-l';
     return '';
   };

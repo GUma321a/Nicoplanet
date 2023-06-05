@@ -55,6 +55,7 @@ module.exports = {
       colors: {
         primary: '#7A7A7A',
         secondary: '#0A0C10',
+        btnBorder: 'rgba(82, 197, 213, 0.53)',
       },
       backgroundImage: {
         buttonBg: 'linear-gradient(180deg, #55FFE0 0%, #21AF85 100%)',
@@ -66,6 +67,9 @@ module.exports = {
       },
       boxShadow: {
         button: '4px 27px 51px rgba(82, 213, 134, 0.3)',
+      },
+      dropShadow: {
+        button: '4px 27px 51px',
       },
     },
   },

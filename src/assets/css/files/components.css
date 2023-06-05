@@ -9,20 +9,33 @@
     @apply text-white font-bold text-18 leading-110 uppercase tracking-tight md:text-[38px] lg:text-[48px];
   }
 
+  .product-title {
+    @apply text-white text-14 font-bold leading-110 tracking-tight uppercase md:text-20;
+  }
+  .product-subtitle {
+    @apply text-white text-14 font-light leading-110 tracking-tight uppercase md:text-20;
+  }
+
   .header__menu {
     @apply font-medium text-[14px] leading-[120%];
   }
 
   .button-ghost-l {
-    @apply border-white border-[1px] rounded-[50px] px-[23px] py-[32px] shadow-button;
+    @apply border-white border-[1px] rounded-[50px] px-[23px] py-[32px];
   }
   .button-ghost-m {
-    @apply border-white border-[1px] rounded-[50px] px-[15px] py-[20px] shadow-button;
+    @apply border-white border-[1px] rounded-[50px] px-[15px] py-[20px];
+  }
+  .button-ghost-1-l {
+    @apply border-btnBorder border-[1px] relative after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest drop-shadow-button md:text-20;
+  }
+  .button-ghost-1-m {
+    @apply border-btnBorder border-[1px] relative after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest drop-shadow-button md:text-20;
   }
   .button-cta-l {
-    @apply relative after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[15%] rounded-[50px] bg-buttonBg shadow-button py-[30px] pl-[30px] pr-[111px] text-14 font-bold uppercase leading-[90%] tracking-tightest md:text-20;
+    @apply relative after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] bg-buttonBg shadow-button py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest md:text-20;
   }
   .button-cta-m {
-    @apply relative after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[15%] rounded-[50px] bg-buttonBg shadow-button py-[30px] pl-[30px] pr-[111px] text-14 font-bold uppercase leading-[90%] tracking-tightest md:text-20;
+    @apply relative after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] bg-buttonBg shadow-button py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest md:text-20;
   }
 }
