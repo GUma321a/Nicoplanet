@@ -4,6 +4,9 @@ import Social from '../molecules/Social';
 import SectionInfo from '../organisms/SectionInfo';
 import SectionProduct from '../organisms/SectionProduct';
 import SectionFeedback from '../organisms/SectionFeedback';
+import SectionAbout from '../organisms/SevtionAbout';
+import SectionBlog from '../organisms/SectionBlog';
+import SectionPartners from '../organisms/SectionPartners';
 
 function Home() {
   return (
@@ -12,6 +15,9 @@ function Home() {
       <SectionHero />
       <SectionInfo />
       <SectionProduct />
+      <SectionAbout />
+      <SectionBlog />
+      <SectionPartners />
       <SectionFeedback />
     </div>
   );

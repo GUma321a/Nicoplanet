@@ -15,6 +15,12 @@
   .product-subtitle {
     @apply text-white text-14 font-light leading-110 tracking-tight uppercase md:text-20;
   }
+  .blog-title {
+    @apply text-white text-20 font-bold leading-110 tracking-tight uppercase md:text-20;
+  }
+  .blog-subtitle {
+    @apply text-white text-20 font-light leading-110 tracking-tight uppercase md:text-20;
+  }
 
   .header__menu {
     @apply font-medium text-[14px] leading-[120%];

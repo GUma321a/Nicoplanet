@@ -47,7 +47,7 @@ Button.propTypes = {
   link: pt.string,
   text: pt.string,
   buttonType: pt.oneOf(['button', 'submit']),
-  variant: pt.oneOf(['cta', 'ghost']),
+  variant: pt.oneOf(['cta', 'ghost', 'ghost-1']),
   size: pt.oneOf(['m', 'l', 'xl']),
   className: pt.string,
   wrapperClass: pt.string,

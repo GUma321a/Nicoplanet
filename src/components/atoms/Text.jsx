@@ -8,6 +8,8 @@ function Text({ text, className, children, size }) {
     if (size === 'l') return 'text-24';
     if (size === 'product-title') return 'product-title';
     if (size === 'product-subtitle') return 'product-subtitle';
+    if (size === 'blog-title') return 'blog-title';
+    if (size === 'blog-subtitle') return 'blog-subtitle';
     return '';
   };
 
@@ -18,7 +20,15 @@ Text.propTypes = {
   children: pt.node,
   text: pt.string,
   className: pt.string,
-  size: pt.oneOf(['s', 'm', 'l', 'product-title', 'product-subtitle']),
+  size: pt.oneOf([
+    's',
+    'm',
+    'l',
+    'product-title',
+    'product-subtitle',
+    'blog-title',
+    'blog-subtitle',
+  ]),
 };
 
 Text.defaultProps = {
