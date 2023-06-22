@@ -11,7 +11,7 @@ import SectionPartners from '../organisms/SectionPartners';
 function Home() {
   return (
     <div className="relative">
-      <Social wrapperClass="absolute top-[50px] flex flex-col" className="mt-md" />
+      <Social wrapperClass="fixed top-1/2 -translate-y-1/2 flex flex-col" className="mt-md" />
       <SectionHero />
       <SectionInfo />
       <SectionProduct />

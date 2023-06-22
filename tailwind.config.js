@@ -44,6 +44,11 @@ module.exports = {
     },
 
     extend: {
+      flex: {
+        20: '0 1 20%',
+        25: '0 1 25%',
+        30: '0 1 30%',
+      },
       spacing: {
         xs: '8px',
         sm: '16px',

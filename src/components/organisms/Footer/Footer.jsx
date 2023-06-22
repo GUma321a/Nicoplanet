@@ -33,7 +33,7 @@ function Footer() {
   ];
 
   return (
-    <section className="footer container-margin mb-lg">
+    <section className="footer container-margin">
       <div className="container">
         <div className="footer__wrapper flex justify-between mb-lg md:mb-[80px]">
           <div className="footer__info">
@@ -46,7 +46,7 @@ function Footer() {
             <Social className="mx-md" />
           </div>
           <div className="footer__form">
-            <Number content={decor} wrapperClass="mb-lg" w={276} />
+            <Number content={decor} wrapperClass="mb-lg" />
             <Form textarea />
           </div>
         </div>

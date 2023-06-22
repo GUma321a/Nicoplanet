@@ -2,9 +2,9 @@ import React from 'react';
 import pt from 'prop-types';
 import Image from './Image';
 
-export default function çNumber({ className, content, wrapperClass, w }) {
+export default function Number({ className, content, wrapperClass, width }) {
   return (
-    <div className={`number block ${wrapperClass} max-w-[${w}px]`}>
+    <div className={`${wrapperClass} number block max-w-[${width}px] w-full`.trim()}>
       <Image src={content} className={className} />
     </div>
   );
@@ -12,13 +12,14 @@ export default function çNumber({ className, content, wrapperClass, w }) {
 
 Number.propTypes = {
   className: pt.string,
-  content: pt.string,
+  content: pt.shape(),
   wrapperClass: pt.string,
-  w: pt.number,
+  width: pt.number,
 };
 
-Number.defaultProp = {
+Number.defaultProps = {
   className: '',
   content: '',
   wrapperClass: '',
+  width: 100,
 };

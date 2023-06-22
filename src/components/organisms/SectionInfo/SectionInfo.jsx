@@ -19,8 +19,8 @@ export default function SectionInfo() {
     <section className="info container-padding bg-infoBg bg-no-repeat bg-left bg-[length:200px_220px] md:bg-[length:500px_550px] lg:bg-[length:800px_850px]">
       <div className="container">
         <div className="info__wrapper flex justify-between">
-          <Number w={245} content={number} />
-          <div className="info__description max-w-[570px]">
+          <Number content={number} width={245} />
+          <div className="info__description max-w-[570px] w-full">
             <Title
               size="h2"
               text="high-quality non-tobacco nicotine pads"

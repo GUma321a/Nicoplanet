@@ -6,8 +6,8 @@ export default function PlanetBg({ className, bgItem, bgW, bgH }) {
     <span
       className={`planet-bg block absolute ${className} w-[${bgW}px] h-[${bgH}px]`}
       style={{
-        mask: `url(${bgItem}) no-repeat 50% 50%`,
-        WebkitMask: `url(${bgItem}) no-repeat 50% 50%`,
+        mask: `url(${bgItem.src}) no-repeat 50% 50%`,
+        WebkitMask: `url(${bgItem.src}) no-repeat 50% 50%`,
         WebkitMaskSize: 'cover',
         maskSize: 'cover',
       }}
@@ -17,7 +17,7 @@ export default function PlanetBg({ className, bgItem, bgW, bgH }) {
 
 PlanetBg.propTypes = {
   className: pt.string,
-  bgItem: pt.string,
+  bgItem: pt.instanceOf(Object),
   bgW: pt.number,
   bgH: pt.number,
 };

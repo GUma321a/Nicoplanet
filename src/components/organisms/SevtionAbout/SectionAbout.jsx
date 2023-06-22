@@ -20,7 +20,7 @@ export default function SectionAbout() {
             <Button text="Contacts" href="#" variant="ghost-1" size="l" />
           </div>
           <div className="about__decor">
-            <Number content={decor} w={271} />
+            <Number content={decor} />
           </div>
         </div>
       </div>

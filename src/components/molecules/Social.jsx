@@ -36,7 +36,11 @@ export default function Social({ wrapperClass, className }) {
     <div className={`social ${wrapperClass}`}>
       {icons.map((item) => {
         return (
-          <Link href={item.src} key={item.link} className={className}>
+          <Link
+            href={item.src}
+            key={item.alt}
+            className={`opacity-40 transition-all≠ hover:opacity-100 ${className}`}
+          >
             <Image src={item.link} layout="intrinsic" />
           </Link>
         );

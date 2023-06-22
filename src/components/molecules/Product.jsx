@@ -1,23 +1,19 @@
 import React from 'react';
 import pt from 'prop-types';
 
-import Image from './Image';
-import Link from './Link';
-import Text from './Text';
+import { Image, Link, Text } from '../atoms';
 
 export default function Product({ content, wrapperClass }) {
   return (
-    <div className={`products__wrapper flex flex-wrap ${wrapperClass}`}>
+    <div
+      className={`products__wrapper grid grid-cols-1 items-center gap-4 md:grid-cols-2 lg:grid-cols-4 ${wrapperClass}`}
+    >
       {content.map((item) => {
         return (
-          <Link
-            className="product text-center max-w-[255px] m-[10px]"
-            key={item.title}
-            href={item.link}
-          >
+          <Link className="product text-center" key={item.id} href={item.link}>
             {item.src && (
-              <div className="product__img relative mb-md block w-[255px]">
-                <Image src={item.src} />
+              <div className="product__img-wrapper relative mb-md block w-[255px]">
+                <Image src={item.src} className="mx-auto product__img transition-all" />
                 <span className="bg-[#52C5D5] opacity-50 block w-full h-full rounded-[50%] absolute blur-[136px] top-0 -z-10 left-1/2 -translate-x-1/2" />
               </div>
             )}
