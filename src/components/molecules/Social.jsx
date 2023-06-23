@@ -39,7 +39,7 @@ export default function Social({ wrapperClass, className }) {
           <Link
             href={item.src}
             key={item.alt}
-            className={`opacity-40 transition-all≠ hover:opacity-100 ${className}`}
+            className={`opacity-40 transition-all hover:opacity-100 ${className}`}
           >
             <Image src={item.link} layout="intrinsic" />
           </Link>

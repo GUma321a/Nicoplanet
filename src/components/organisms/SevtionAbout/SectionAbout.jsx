@@ -1,16 +1,16 @@
 import React from 'react';
 
-import decor from '../../../assets/images/icons/2.svg';
-import Number from '../../atoms/Number';
-import { Button, Title } from '../../atoms';
-import Text from '../../atoms/Text';
+import number from '../../../assets/images/icons/2.svg';
+import decor from '../../../assets/images/decor/about-decor.png';
+import { Button, Title, Number, Image, Text } from '../../atoms';
 
 export default function SectionAbout() {
   return (
-    <section className="about container-padding">
+    // bg-aboutDecor bg-cover bg-center bg-no-repeat
+    <section className="about container-padding relative">
       <div className="container">
-        <div className="about__wrapper flex">
-          <div className="about__info">
+        <div className="about__wrapper flex justify-between">
+          <div className="about__info flex-50">
             <Title text="about nicoplanet" size="h2" className="mb-lg md:mb-xxl" />
             <Text
               size="m"
@@ -19,8 +19,9 @@ export default function SectionAbout() {
             />
             <Button text="Contacts" href="#" variant="ghost-1" size="l" />
           </div>
-          <div className="about__decor">
-            <Number content={decor} />
+          <Number className="about__number" content={number} />
+          <div className="as absolute -z-10">
+            <Image src={decor} />
           </div>
         </div>
       </div>

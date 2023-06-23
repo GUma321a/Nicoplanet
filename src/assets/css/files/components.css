@@ -40,15 +40,15 @@
     @apply border-white border-[1px] rounded-[50px] px-[15px] py-[20px] transition-all hover:bg-buttonBg hover:border-green-400 focus:bg-buttonBg focus:border-green-400;
   }
   .button-ghost-1-l {
-    @apply border-btnBorder border-[1px] relative after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest transition-all hover:bg-buttonBg hover:border-green-400 focus:bg-buttonBg focus:border-green-400 md:text-20;
+    @apply border-btnBorder border-[1px] relative after:absolute after:bg-buttonIcon after:w-[30px] after:h-[30px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest transition-all hover:bg-buttonBg hover:border-green-400 focus:bg-buttonBg focus:border-green-400 md:text-20 md:after:w-[50px] md:after:h-[50px];
   }
   .button-ghost-1-m {
-    @apply border-btnBorder border-[1px] relative after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest transition-all hover:bg-buttonBg hover:border-green-400 focus:bg-buttonBg focus:border-green-400 md:text-20;
+    @apply border-btnBorder border-[1px] relative after:absolute after:bg-buttonIcon after:w-[30px] after:h-[30px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest transition-all hover:bg-buttonBg hover:border-green-400 focus:bg-buttonBg focus:border-green-400 md:text-20 md:after:w-[50px] md:after:h-[50px];
   }
   .button-cta-l {
-    @apply relative border-[1px] border-inherit after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] bg-buttonBg shadow-button py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest transition-colors hover:border-white hover:bg-none focus:border-white focus:bg-none md:text-20;
+    @apply relative border-[1px] border-inherit after:absolute after:bg-buttonIcon after:w-[30px] after:h-[30px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] bg-buttonBg shadow-button py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest transition-colors hover:border-white hover:bg-none focus:border-white focus:bg-none md:text-20 md:after:w-[50px] md:after:h-[50px];
   }
   .button-cta-m {
-    @apply relative border-[1px] border-inherit after:absolute after:bg-buttonIcon after:w-[50px] after:h-[50px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] bg-buttonBg shadow-button py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest transition-colors hover:border-white hover:bg-none focus:border-white focus:bg-none md:text-20;
+    @apply relative border-[1px] border-inherit after:absolute after:bg-buttonIcon after:w-[30px] after:h-[30px] after:bg-cover after:top-1/2 after:-translate-y-1/2 after:right-[10%] rounded-[50px] bg-buttonBg shadow-button py-[30px] pl-[30px] pr-[120px] text-14 font-bold uppercase leading-[90%] tracking-tightest transition-colors hover:border-white hover:bg-none focus:border-white focus:bg-none md:text-20 md:after:w-[50px] md:after:h-[50px];
   }
 }

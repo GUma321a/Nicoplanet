@@ -48,6 +48,7 @@ module.exports = {
         20: '0 1 20%',
         25: '0 1 25%',
         30: '0 1 30%',
+        50: '0 1 50%',
       },
       spacing: {
         xs: '8px',
@@ -69,6 +70,7 @@ module.exports = {
         mail: 'url("/icons/mail.svg")',
         call: 'url("/icons/call.svg")',
         infoBg: 'url("/decor/info-bg.png")',
+        aboutDecor: 'url("/decor/about-decor.png")',
       },
       boxShadow: {
         button: '4px 27px 51px rgba(82, 213, 134, 0.3)',

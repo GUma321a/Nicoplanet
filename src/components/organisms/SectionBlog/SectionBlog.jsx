@@ -10,7 +10,7 @@ export default function SectionBlog() {
       <div className="container">
         {/* grid-cols-[2_minmax(900px,_1fr)_276px] */}
         {/* repeat(2, minmax(0, 1fr)) */}
-        <div className="blog__top grid grid-cols-2 justify-between mb-xxl md:mb-[60px]">
+        <div className="blog__top grid grid-cols-1 justify-between mb-xxl md:mb-[60px] md:grid-cols-2 ">
           <Number className="blog__top-decor" content={decor} />
           <div className="blog__top-desc-wrapper">
             <Title size="h2" text="Blog" className="blog__top-title mb-lg md:mb-[63px]" />

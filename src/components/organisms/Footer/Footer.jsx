@@ -35,15 +35,15 @@ function Footer() {
   return (
     <section className="footer container-margin">
       <div className="container">
-        <div className="footer__wrapper flex justify-between mb-lg md:mb-[80px]">
-          <div className="footer__info">
+        <div className="footer__wrapper grid grid-cols-1 justify-between mb-lg md:mb-[80px] md:grid-cols-2">
+          <div className="footer__info mb-xl md:mb-0">
             <Title
               className="footer__info-title mb-md  md:mb-lg lg:mb-[63px]"
               size="h2"
               text="SAY HELLO"
             />
             <LinkWithIcon content={contact} className="mb-md" />
-            <Social className="mx-md" />
+            <Social className="mx-sm md:mx-md" />
           </div>
           <div className="footer__form">
             <Number content={decor} wrapperClass="mb-lg" />

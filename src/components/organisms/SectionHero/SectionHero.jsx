@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button, Title } from '../../atoms';
-import Text from '../../atoms/Text';
+import { Button, Title, Text } from '../../atoms';
 
 export default function SectionHero() {
   return (
