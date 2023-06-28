@@ -1,10 +1,10 @@
 import React from 'react';
 import pt from 'prop-types';
 
-export default function PlanetBg({ className, bgItem, bgW, bgH }) {
+export default function PlanetBg({ className, bgItem, width, height }) {
   return (
     <span
-      className={`planet-bg block absolute ${className} w-[${bgW}px] h-[${bgH}px]`}
+      className={`${className} planet-bg block absolute w-[${width}px] h-[${height}px]`.trim()}
       style={{
         mask: `url(${bgItem.src}) no-repeat 50% 50%`,
         WebkitMask: `url(${bgItem.src}) no-repeat 50% 50%`,
@@ -18,12 +18,12 @@ export default function PlanetBg({ className, bgItem, bgW, bgH }) {
 PlanetBg.propTypes = {
   className: pt.string,
   bgItem: pt.instanceOf(Object),
-  bgW: pt.number,
-  bgH: pt.number,
+  width: pt.number,
+  height: pt.number,
 };
 
 PlanetBg.defaultProps = {
   className: '',
-  bgW: 100,
-  bgH: 100,
+  width: 100,
+  height: 100,
 };

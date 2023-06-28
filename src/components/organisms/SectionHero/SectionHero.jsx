@@ -1,11 +1,13 @@
 import React from 'react';
+import { product } from './data';
 import { Button, Title, Text } from '../../atoms';
+import Carousel from '../../molecules/Carousel';
 
 export default function SectionHero() {
   return (
     <section className="hero container-padding pt-0">
       <div className="container">
-        <div className="hero__wrapper flex justify-between">
+        <div className="hero__wrapper flex justify-between gap-md flex-col md:flex-row">
           <div className="hero__description">
             <Title
               text="try all the flavors of PLanet"
@@ -25,7 +27,10 @@ export default function SectionHero() {
               className="hero__description-button mt-md md:mt-[50px] lg:mt-[135px]"
             />
           </div>
-          <div className="hero__img"></div>
+          <div className="hero__img max-w-[500px] w-full relative mx-auto">
+            <Carousel content={product} />
+            <span className="bg-[#52C5D5] opacity-50 block w-full h-full rounded-[50%] absolute blur-[136px] top-0 -z-10 left-1/2 -translate-x-1/2" />
+          </div>
         </div>
       </div>
     </section>

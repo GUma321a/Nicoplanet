@@ -16,3 +16,6 @@
 .container-margin {
   @apply my-[50px] md:my-[100px] lg:my-[180px];
 }
+button.splide__arrow {
+  @apply top-[96%];
+}
