@@ -10,10 +10,13 @@ export default function Product({ content, wrapperClass }) {
     >
       {content.map((item) => {
         return (
-          <Link className="product text-center" key={item.id} href={item.link}>
+          <Link className="product group text-center" key={item.id} href={item.link}>
             {item.src && (
               <div className="product__img-wrapper relative mb-md block w-[255px] mx-auto">
-                <Image src={item.src} className="mx-auto product__img transition-all" />
+                <Image
+                  src={item.src}
+                  className="mx-auto group-hover:scale-125 product__img transition-all duration-300"
+                />
                 <span className="bg-[#52C5D5] opacity-50 block w-full h-full rounded-[50%] absolute blur-[136px] top-0 -z-10 left-1/2 -translate-x-1/2" />
               </div>
             )}

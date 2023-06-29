@@ -13,12 +13,13 @@ export default function Carousel({ content, className }) {
   const splideOptions = {
     type: 'loop',
     rewind: true,
+    perPage: 1,
   };
   return (
     <Splide options={splideOptions} aria-label="My Favorite Images" className={`${className}`}>
       {content.map((item) => {
         return (
-          <SplideSlide options={{ type: 'loop' }} key={item.id}>
+          <SplideSlide key={item.id}>
             <Image src={item.src} />
           </SplideSlide>
         );

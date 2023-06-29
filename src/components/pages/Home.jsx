@@ -7,9 +7,6 @@ import SectionFeedback from '../organisms/SectionFeedback';
 import SectionAbout from '../organisms/SevtionAbout';
 import SectionBlog from '../organisms/SectionBlog';
 import SectionPartners from '../organisms/SectionPartners';
-// import Carousel from '../molecules/Carousel';
-// import ProductSlider from '../atoms/ProductSlider';
-// import { product } from '../organisms/SectionHero/data';
 
 function Home() {
   return (
@@ -25,9 +22,6 @@ function Home() {
       <SectionBlog />
       <SectionPartners />
       <SectionFeedback />
-      {/* <Carousel>
-        <ProductSlider content={product} />
-      </Carousel> */}
     </div>
   );
 }
