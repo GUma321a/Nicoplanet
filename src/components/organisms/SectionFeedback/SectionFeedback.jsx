@@ -23,7 +23,7 @@ export default function SectionFeedback() {
           className="feedback__btn mx-auto"
           variant="cta"
           size="l"
-          href="#"
+          link="#"
         />
         <PlanetBg bgItem={decor} width={1000} height={1000} />
       </div>

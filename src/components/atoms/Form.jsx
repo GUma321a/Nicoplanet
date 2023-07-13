@@ -2,9 +2,9 @@ import React from 'react';
 import pt from 'prop-types';
 import Button from './Button';
 
-export default function Form({ className, textarea }) {
+export default function Form({ className, textarea, ...props }) {
   return (
-    <form className={`form flex flex-col max-w-[445px] w-full ${className}`}>
+    <form className={`form flex flex-col max-w-[445px] w-full ${className}`} {...props}>
       <input
         className="form-name p-md mb-md rounded-[50px] border-white border-opacity-50 border-[1px] bg-inherit outline-none hover:border-btnBorder focus:border-btnBorder"
         type="text"

@@ -23,7 +23,7 @@ export default function SectionHero() {
               variant="cta"
               size="l"
               text="Read more"
-              link="codemagic.com.ua"
+              link="./blogs"
               className="hero__description-button mt-md md:mt-[50px] lg:mt-[135px]"
             />
           </div>

@@ -32,7 +32,7 @@ export default function SectionInfo() {
             <Button
               text="all PRODUCTS "
               variant="cta"
-              link="codemagic.com.ua"
+              link="#"
               size="l"
               className="info__description-button mt-sm md:mt-xl lg:mt"
             />

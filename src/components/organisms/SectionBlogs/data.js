@@ -4,7 +4,7 @@ import blog_3 from '../../../assets/images/blog/blog-3.png';
 
 export const blog = [
   {
-    href: '#1',
+    href: './blogInfo',
     src: blog_1,
     title: 'Nicoplanet',
     subtitle: 'Pineapple Saturn',
@@ -13,7 +13,7 @@ export const blog = [
     id: 1,
   },
   {
-    href: '#2',
+    href: './blogInfo',
     src: blog_2,
     title: 'Nicoplanet',
     subtitle: 'Pineapple Saturn',
@@ -22,7 +22,7 @@ export const blog = [
     id: 2,
   },
   {
-    href: '#3',
+    href: './blogInfo',
     src: blog_3,
     title: 'Nicoplanet',
     subtitle: 'Pineapple Saturn',
@@ -31,7 +31,7 @@ export const blog = [
     id: 3,
   },
   {
-    href: '#1',
+    href: './blogInfo',
     src: blog_1,
     title: 'Nicoplanet',
     subtitle: 'Pineapple Saturn',
@@ -40,7 +40,7 @@ export const blog = [
     id: 4,
   },
   {
-    href: '#2',
+    href: './blogInfo',
     src: blog_2,
     title: 'Nicoplanet',
     subtitle: 'Pineapple Saturn',
@@ -49,7 +49,7 @@ export const blog = [
     id: 5,
   },
   {
-    href: '#3',
+    href: './blogInfo',
     src: blog_3,
     title: 'Nicoplanet',
     subtitle: 'Pineapple Saturn',
@@ -58,7 +58,7 @@ export const blog = [
     id: 6,
   },
   {
-    href: '#1',
+    href: './blogInfo',
     src: blog_1,
     title: 'Nicoplanet',
     subtitle: 'Pineapple Saturn',
@@ -67,7 +67,7 @@ export const blog = [
     id: 7,
   },
   {
-    href: '#2',
+    href: './blogInfo',
     src: blog_2,
     title: 'Nicoplanet',
     subtitle: 'Pineapple Saturn',
@@ -76,7 +76,7 @@ export const blog = [
     id: 8,
   },
   {
-    href: '#3',
+    href: './blogInfo',
     src: blog_3,
     title: 'Nicoplanet',
     subtitle: 'Pineapple Saturn',

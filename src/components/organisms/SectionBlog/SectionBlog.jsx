@@ -8,8 +8,6 @@ export default function SectionBlog() {
   return (
     <section className="blog container-margin">
       <div className="container">
-        {/* grid-cols-[2_minmax(900px,_1fr)_276px] */}
-        {/* repeat(2, minmax(0, 1fr)) */}
         <div className="blog__top grid grid-cols-1 justify-between mb-xxl md:mb-[60px] md:grid-cols-2 ">
           <Number className="blog__top-decor" content={decor} />
           <div className="blog__top-desc-wrapper">
@@ -23,7 +21,7 @@ export default function SectionBlog() {
         <BlogItem content={blog} wrapperClass="blog__items mb-xl md:mb-[130px]" />
         <Button
           className="blog__btn uppercase"
-          href="#"
+          link="./blogs"
           size="l"
           variant="ghost-1"
           text="all PRODUCTS"
