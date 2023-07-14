@@ -1,52 +1,50 @@
-import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-
-const containerStyle = {
-  width: '100%',
-  height: '400px',
-};
-
-const mapId = 'b6f3fa7d26f4e327';
-
-const center = {
-  lat: 38.6696089513444,
-  lng: -121.30618529030217,
-};
-
-const markers = [
-  {
-    lat: 38.66960895134448,
-    lng: -121.32154898353947,
-  },
-  {
-    lat: 38.6596902908238,
-    lng: -121.30781607338322,
-  },
-  {
-    lat: 38.67751608816621,
-    lng: -121.29442648598088,
-  },
-  {
-    lat: 38.67148530013458,
-    lng: -121.2848134488715,
-  },
-  {
-    lat: 38.6536580011981,
-    lng: -121.2822385282172,
-  },
-];
+import React, { useMemo } from 'react';
+import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 
 export default function Map() {
-  const API_KEY = process.env.REACT_APP_API_MAPS_KEY;
-
-  return (
-    <div className="my-md">
-      <LoadScript googleMapsApiKey={API_KEY}>
-        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={13} id={mapId}>
-          <Marker position={markers} />
-        </GoogleMap>
-      </LoadScript>
-    </div>
+  const defaultOptions = {
+    panControl: true,
+    zoomControl: true,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    rotateControl: false,
+    clickableIcons: false,
+    keyboardShortcuts: false,
+    scrollwheel: true,
+    disableDoubleClickZoom: false,
+    fullscreenControl: false,
+  };
+  const containerStyle = {
+    width: '100%',
+    height: '400px',
+  };
+  const mapId = 'b6f3fa7d26f4e327';
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: process.env.NEXT_PUBLIC_API_MAPS_KEY,
+  });
+  const center = useMemo(
+    () => ({
+      lat: 50.424817,
+      lng: 30.5806579,
+    }),
+    []
+  );
+  const marker = {
+    lat: 50.424817,
+    lng: 30.5806579,
+  };
+  return isLoaded ? (
+    <GoogleMap
+      id={mapId}
+      zoom={13}
+      center={center}
+      options={defaultOptions}
+      mapContainerStyle={containerStyle}
+    >
+      <Marker position={marker} />
+    </GoogleMap>
+  ) : (
+    <div className="text-center">Loaded...</div>
   );
 }

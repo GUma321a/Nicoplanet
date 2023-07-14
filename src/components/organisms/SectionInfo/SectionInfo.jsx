@@ -4,6 +4,8 @@ import Text from '../../atoms/Text';
 
 import number from '../../../assets/images/icons/1.svg';
 import Number from '../../atoms/Number';
+import PlanetBg from '../../atoms/PlanetBg';
+import decor from '../../../assets/images/decor/info-bg.png';
 
 export default function SectionInfo() {
   const text = [
@@ -16,7 +18,7 @@ export default function SectionInfo() {
   ];
 
   return (
-    <section className="info container-padding bg-infoBg bg-no-repeat bg-left bg-[length:200px_220px] md:bg-[length:500px_550px] lg:bg-[length:800px_850px]">
+    <section className="info container-padding relative">
       <div className="container">
         <div className="info__wrapper flex justify-between">
           <Number content={number} width={245} />
@@ -38,6 +40,7 @@ export default function SectionInfo() {
             />
           </div>
         </div>
+        <PlanetBg bgItem={decor} className="w-[750px] h-[750px] top-0 -z-10" />
       </div>
     </section>
   );

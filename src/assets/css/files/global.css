@@ -1,7 +1,7 @@
 /* Container */
 @screen lg {
   .container {
-    @apply box-content px-md;
+    @apply box-border px-md;
   }
 }
 @screen xl {

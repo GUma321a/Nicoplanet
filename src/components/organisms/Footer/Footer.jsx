@@ -13,10 +13,10 @@ import decor from '../../../assets/images/icons/3.svg';
 
 function Footer() {
   return (
-    <section className="footer container-margin">
-      <Map wrapperClass="w-full mb-[50px] md:mb-[100px]" />
+    <section className="footer mt-[100px] md:mt-[180px]">
+      <Map />
       <div className="container">
-        <div className="footer__wrapper grid grid-cols-1 justify-between mb-lg md:mb-[80px] md:grid-cols-2">
+        <div className="footer__wrapper grid grid-cols-1 justify-between mb-lg mt-md md:mb-[80px] md:grid-cols-2">
           <div className="footer__info mb-xl md:mb-0" id="contact">
             <Title
               className="footer__info-title mb-md  md:mb-lg lg:mb-[63px]"
