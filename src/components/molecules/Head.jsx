@@ -29,22 +29,22 @@ function Head({ title, description }) {
   const linkTags = [
     {
       rel: 'icon',
-      href: url('favicon/favicon.ico'),
+      href: url('favicon.ico'),
       sizes: 'any',
     },
     {
       rel: 'icon',
-      href: url('favicon/icon.svg'),
+      href: url('icon.svg'),
       type: 'image/svg+xml',
     },
     {
       rel: 'apple-touch-icon',
-      href: url('favicon/apple-touch-icon.png'),
+      href: url('apple-touch-icon.png'),
       sizes: '180x180',
     },
     {
       rel: 'manifest',
-      href: url('favicon/site.webmanifest'),
+      href: url('site.webmanifest'),
     },
   ];
 
@@ -59,9 +59,11 @@ function Head({ title, description }) {
         twitter={{
           cardType: 'summary_large_image',
         }}
+        dangerouslySetAllPagesToNoIndex
+        dangerouslySetAllPagesToNoFollow
       />
       <HeadNext>
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#040C25" />
       </HeadNext>
     </>
   );
