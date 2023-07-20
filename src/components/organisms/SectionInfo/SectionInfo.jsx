@@ -40,7 +40,7 @@ export default function SectionInfo() {
             />
           </div>
         </div>
-        <PlanetBg bgItem={decor} className="w-[750px] h-[750px] top-0 -z-10" />
+        <PlanetBg bgItem={decor} className="info__decor" idName="info__decor" />
       </div>
     </section>
   );

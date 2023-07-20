@@ -25,7 +25,7 @@ export default function SectionFeedback() {
           size="l"
           link="#"
         />
-        <PlanetBg bgItem={decor} className="w-[750px] h-[750px] top-0 -z-10" />
+        <PlanetBg bgItem={decor} className="feedback__decor" idName="feedback__decor" />
       </div>
     </section>
   );

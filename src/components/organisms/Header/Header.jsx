@@ -10,6 +10,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const hundleMenu = () => {
     setIsOpen(!isOpen);
+    document.body.style.overflow = !isOpen ? 'hidden' : '';
   };
 
   return (
