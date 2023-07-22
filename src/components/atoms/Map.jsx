@@ -57,6 +57,6 @@ export default function Map() {
       })}
     </GoogleMap>
   ) : (
-    <div className="text-center">Loaded...</div>
+    <div className="text-center">Loaded....</div>
   );
 }
