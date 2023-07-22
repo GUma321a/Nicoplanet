@@ -30,10 +30,20 @@ export default function Map() {
     }),
     []
   );
-  const marker = {
-    lat: 50.424817,
-    lng: 30.5806579,
-  };
+  const markers = [
+    {
+      lat: 50.42949,
+      lng: 30.595847,
+    },
+    {
+      lat: 50.424817,
+      lng: 30.5806579,
+    },
+    {
+      lat: 50.434903,
+      lng: 30.595418,
+    },
+  ];
   return isLoaded ? (
     <GoogleMap
       id={mapId}
@@ -42,7 +52,9 @@ export default function Map() {
       options={defaultOptions}
       mapContainerStyle={containerStyle}
     >
-      <Marker position={marker} />
+      {markers.map((item) => {
+        return <Marker position={item} key={item.id} />;
+      })}
     </GoogleMap>
   ) : (
     <div className="text-center">Loaded...</div>

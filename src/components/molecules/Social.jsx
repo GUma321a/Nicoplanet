@@ -13,22 +13,22 @@ export default function Social({ wrapperClass, className }) {
     {
       link: facebook,
       alt: 'facebook',
-      src: 'codemagic.com.ua',
+      src: 'https://codemagic.com.ua',
     },
     {
       link: twitter,
       alt: 'twitter',
-      src: 'codemagic.com.ua',
+      src: 'https://codemagic.com.ua',
     },
     {
       link: instagram,
       alt: 'instagram',
-      src: 'codemagic.com.ua',
+      src: 'https://codemagic.com.ua',
     },
     {
       link: youtube,
       alt: 'youtube',
-      src: 'codemagic.com.ua',
+      src: 'https://codemagic.com.ua',
     },
   ];
 
